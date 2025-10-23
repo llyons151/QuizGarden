@@ -1,10 +1,11 @@
-<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/eb8916c1-f922-44cc-8b7c-9a68e16c742b" />
 # 🌱 Quiz Garden
 
 **Quiz Garden** is an AI-powered quiz generator that turns your notes, links, or uploaded files into fully interactive quizzes.  
 Whether you’re studying for an exam or practicing recall from your notes, Quiz Garden lets you grow your knowledge — one question at a time.
 
 ---
+
+<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/f27b8cfa-d2e8-4175-a92d-b93a24b9fa01" />
 
 ## 🌸 Features
 
