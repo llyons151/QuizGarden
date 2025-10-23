@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'CambonUI Sans Serif';
+  src: url('/fonts/CambonUI-SansSerif.woff2') format('woff2'),
+    url('/fonts/CambonUI-SansSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global rule to apply the font everywhere */
+body {
+  font-family: 'CambonUI Sans Serif', sans-serif;
+}
+
+.footer {
+  background-color: hsl(152, 33%, 96%);
+  color: hsl(240, 10%, 3.9%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 150px;
+  }
+
+  @media (max-width: 640px) {
+    .footer {
+      margin-top: 7rem; /* or whatever value you need */
+      padding-bottom: 200px !important;
+    }
+    .footer-nav {
+      width: 70%;
+      gap: 5px !important;
+    }
+
+    .footer_header{
+      font-size: 15px !important;
+    }
+
+    .menu{
+      font-size: 15px !important;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+    
+    .sub_text{
+      font-size: 10px !important;
+    }
+
+    .left_section{
+      margin-left: 120px !important;
+    }
+    .title_footer_header{
+        font-size: 1rem !important;
+        text-align: left !important;
+        flex-direction: column !important;
+    }
+  }
+
+  .footer-container {
+    width: 100vw;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+    justify-content: center !important;
+    align-items: top;
+    text-align: center;
+  }
+  
+  .footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+
+
+  .footer_line{
+    height: 1px;
+    width: 90vw;
+    position: relative;
+    background-color: #636363;
+    justify-self: center;
+    display: flex;
+    margin-top: 100px;
+  }
+  
+  .title_footer_header{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .divider{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 5vw;
+  }
+
+  .news_letter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;     
+    justify-content: flex-start;  
+    text-align: left;
+  }
+    
+  .news_letter input {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    font-size: 13px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Add focus styles for better user interaction */
+  .news_letter input:focus {
+    outline: none;
+  }
+
+  .sign_up{
+    cursor: pointer;
+    background-color: #9cecb6;
+    border: none;
+    border-radius: 1px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 85px;
+    color: #6e7075;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .sign_up:hover{
+    transform: scale(1.02);
+  }
+  .input_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .social_media_icon_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    width: 100px;
+  }
+
+  .social_media_icon {
+    width: 25px; /* Set a specific width */
+    height: 25px; /* Set a specific height */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+    transition: background-image 0.3s ease-in-out; /* Optional smooth transition for background change */
+    cursor: pointer;
+  }
+  
+  .social_media_icon.ig {
+    background-image: url('/images/social_media/instagram.png'); /* Default image */
+  }
+  
+  .social_media_icon.tw {
+    background-image: url('/images/social_media/twitter.png'); /* Default image */
+  }
+  
+  .social_media_icon.fb {
+    background-image: url('/images/social_media/facebook.png'); /* Default image */
+  }
+  
+  .social_media_icon.ig:hover {
+    background-image: url('/images/social_media/instagram_active.png'); /* Hover image */
+  }
+  
+  .social_media_icon.tw:hover {
+    background-image: url('/images/social_media/twitter_active.png'); /* Hover image */
+  }
+  
+  .social_media_icon.fb:hover {
+    background-image: url('/images/social_media/facebook_active.png'); /* Hover image */
+  }
+      
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left !important;
+  }
+
+  .menu_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* left‑align all flex items */
+  }
+
+  .menu_item{
+    display: flex;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .left_section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    max-width: 300px;
+    text-align: left;
+    gap: 15px;
+    font-size: 1.5rem;
+  }
+
+  .sub_text{
+    font-size: .75rem;
+    font-weight: 400;
+    color: rgb(138 137 140);
+    text-align: left !important;
+    line-height: 1.25rem;
+    transition: color 0.3s ease-in-out;
+    padding: 0px !important;
+  }
+  .sub_text:hover{
+    color: rgb(82 183 136 );
+  }
+  .large{
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    display: inline-block; /* ensures text-align works */
+  }
+
+  .arr{
+    margin-top: 100px;
+  }
+
+
+  .title_header{
+    position: relative;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .title_header{
+        width: 40vw !important;
+        margin-left: 5px;
+    }
+    .navbar_right{
+        gap: 5px !important;
+    }
+}
+
+.green{
+color: rgb(82 183 136 );
+}
+
+.black{
+    color: rgb(64 62 67);
+}

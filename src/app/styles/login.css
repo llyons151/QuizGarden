@@ -1,0 +1,91 @@
+/* Login.module.css */
+
+/* Full-screen container with a subtle gradient */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #6b82f7, #ad7ce4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* The white box that contains the login form */
+  .loginBox {
+    background-color: #fff;
+    width: 400px;
+    max-width: 90%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .title {
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Error message styling */
+  .errorMsg {
+    color: #e63946;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Basic form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input fields */
+  .input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  /* Basic button styling */
+  .button {
+    padding: 0.75rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #6b82f7;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  /* Hover & Disabled states */
+  .button:hover {
+    background: #596cd9;
+  }
+  .button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* Divider between normal login & Google button */
+  .divider {
+    margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  /* Google-specific button style (optional) */
+  .googleBtn {
+    background: #db4437; /* Google red */
+    margin-top: 1rem;
+  }
+  
+  .googleBtn:hover {
+    background: #b53b2d;
+  }
+  

@@ -1,0 +1,21 @@
+.payment_link{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(82 183 136);
+    position: relative;
+    display: flex;
+    border-radius: .75rem;
+    height: 50px;
+    width: 90%;
+    max-width: 300px;
+    align-self: center;
+    color: rgb(255, 255, 255) !important;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.payment_link:hover {
+    background-color: rgb(43, 146, 98);
+}

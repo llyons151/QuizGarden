@@ -1,0 +1,206 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.login_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.auth_box {
+    height: 100vh;
+    max-height: 700px;
+    width: 100vw;
+    max-width: 500px;
+    align-items: stretch;
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.auth_right_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 55vw;
+    background: linear-gradient(227deg, rgba(237, 237, 237, 1) 0%, rgba(169, 255, 177, 1) 35%, rgba(197, 255, 223, 1) 100%);
+}
+
+.login_image {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+h1{
+    font-size: 48px;
+    display: flex;
+    padding: 0;
+}
+
+h5{
+    font-size: 13px;
+    color: rgb(170, 170, 170);
+    display: flex;
+    padding: 0;
+}
+
+.auth_header h1,
+.auth_header h5 , h3{
+    margin: 0;
+}
+
+.auth_header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    background-color: none;
+}
+
+.input_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.form_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.login{
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 65px;
+    background: linear-gradient(227deg, rgb(154, 255, 162) 0%, rgba(169, 255, 177, 1) 35%, rgba(197, 255, 223, 1) 100%);
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.login:hover {
+    transform: scale(1.03);
+}
+
+.google_login{
+    gap: 20px;
+    width: 40%;
+    position: relative;
+    display: flex;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px rgb(207, 207, 207) solid;
+}
+
+.signup_link_container{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link_to_signup{
+    cursor: pointer;
+    color: rgb(0, 105, 18);;
+}
+
+.footer_text{
+    color: rgb(170, 170, 170);
+}
+
+input:-webkit-autofill {
+    background-color: red !important;
+}
+
+.line_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.line{
+    height: 1px;
+    width: auto;
+    background-color: rgb(170, 170, 170);
+    width: 35%;
+}
+
+.line_text{
+    color: rgb(170, 170, 170);
+    font-size: 15px
+}
+
+.google_img{
+    position: relative;
+    height: auto;
+    width: 30px;
+}
+
+.alt_login_methods{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}

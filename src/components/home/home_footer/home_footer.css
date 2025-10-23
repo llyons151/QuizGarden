@@ -1,0 +1,9 @@
+.home_footer_container {
+    background-color: rgb(87, 87, 87);
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}

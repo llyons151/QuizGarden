@@ -1,0 +1,586 @@
+@font-face {
+    font-family: 'CambonUI Sans Serif';
+    src: url('/fonts/CambonUI-SansSerif.woff2') format('woff2'),
+        url('/fonts/CambonUI-SansSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global rule to apply the font everywhere */
+body {
+    font-family: 'CambonUI Sans Serif', sans-serif;
+}
+
+@media (max-width: 480px) {
+.resource_box_wrapper{
+    max-width: 90% !important;
+}
+}
+
+.resource_container {
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 40vh;
+    height: auto;
+    width: 95vw;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 2px;
+    border-top: 1px solid hsl(152, 15%, 90%);
+    border-bottom: 1px solid hsl(152, 15%, 90%);
+
+}
+
+.nothing_selected_container {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    font-size: medium;
+    color: rgb(221, 221, 221);
+}
+
+h2 {
+    position: relative;
+    display: flex;
+    font-size: large;
+    color: rgb(201, 199, 199);
+}
+
+h3 {
+    position: relative;
+    display: flex;
+    font-size: x-large;
+    color: #403E43;
+
+}
+
+.book_image {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book_image:hover {
+    transform: scale(1.05);
+}
+
+.add_resource_button {
+    position: relative;
+    width: 90px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: x-small;
+    transition: background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+}
+
+.add_resource_button:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.1);
+}
+
+.resource_input_container {
+    min-height: 40vh;
+    height: auto;
+    width: 80vw;
+    max-width: 950px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+
+}
+
+.first-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid hsl(152, 15%, 90%);
+
+}
+
+.first-row .text_input {
+    flex: 1;
+    min-height: 250px;
+    min-width: 100%;
+}
+
+.second-row {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.resource_box_wrapper {
+    position: relative;
+    margin-top: 25px;
+    min-height: auto;
+    max-height: 40vh;
+    width: 95vw !important;
+    max-width: 80%;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #333;
+    font-weight: 500;
+    background-color: hsl(152, 43%, 98%);
+    border: 1px solid hsl(152, 15%, 90%);
+    border-radius: 15px;
+    overflow: auto;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 25px;
+    right: 0 !important;
+    top: 0 !important;
+    gap: 15px !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    overflow-y: scroll;
+  }
+    
+
+.text_input {
+    box-sizing: border-box;
+    width: 97%;
+    min-height: 300px;
+    padding: 0.5rem 0.75rem;
+    display: block;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #333;
+    font-weight: 500;
+    background-color: hsl(152, 43%, 98%);
+    border: 1px solid hsl(152, 15%, 90%);
+    border-radius: 15px;
+    resize: none;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.text_input::placeholder {
+    font-style: normal !important;
+}
+
+.text_input:focus {
+    outline: none;
+    border: 1px solid rgb(82 183 136);
+}
+
+.text_input::placeholder {
+    color: #999;
+}
+
+
+
+.url_input {
+    display: flex;
+    position: relative;
+    width: 97%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    height: 1.5rem;
+    color: #333;
+    background-color: hsl(152, 43%, 98%);
+    border: 1px solid hsl(152, 15%, 90%);
+    border-radius: 15px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.url_input:focus {
+    outline: none;
+    border-color: #a5efba;
+}
+
+.url_input::placeholder {
+    font-style: none !important;
+}
+
+
+
+@media (max-width: 600px) {
+    .text_input {
+        width: 105% !important;
+        height: 120px;
+    }
+}
+
+.footer_buttons_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save_button {
+    position: relative;
+    cursor: pointer;
+    color: hsl(355.7, 100%, 100%);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: hsl(152, 55%, 52%);
+    border-radius: .75rem;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.save_button:hover {
+    border-color: #a5efba;
+    background-color: hsl(152, 50%, 44%);
+}
+
+.save_resource_button:active {
+    border-color: #a5efba;
+    transform: scale(0.98);
+}
+
+.resource_name_input {
+    display: flex;
+    position: relative;
+    width: 97%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    height: 1.5rem;
+    color: #333;
+    background-color: hsl(152, 43%, 98%);
+    border: 1px solid hsl(152, 15%, 90%);
+    border-radius: 15px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.resource_name_input::placeholder {
+    font-style: normal !important;
+}
+
+.resource_name_input:focus {
+    outline: none;
+    border: 1px solid rgb(82 183 136);
+}
+
+.resource_name_input::placeholder {
+    font-size: 16px;
+    color: #999;
+    font-style: italic;
+}
+
+.resource_head_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.dark-mode .back_button {
+    filter: invert(100%);
+}
+
+.dark-mode .resource_container {
+    background-color: #1e1e1e;
+    /* Dark gray */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Slightly lighter border */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .nothing_selected_container h1 {
+    color: #d4d4d4;
+    /* Light gray text */
+}
+
+.dark-mode .nothing_selected_container h2 {
+    color: #a9a9a9;
+    /* Slightly dimmer gray */
+}
+
+.dark-mode .add_resource_button {
+    border: 1px solid #d4d4d4;
+    color: #d4d4d4;
+}
+
+.dark-mode .add_resource_button:hover {
+    background-color: #d4d4d4;
+    color: black;
+}
+
+.dark-mode .text_input,
+.dark-mode .url_input,
+.dark-mode .resource_name_input {
+    background-color: #2a2a2a;
+    /* Dark input background */
+    color: #ffffff;
+    /* White text */
+    border: 2px solid #444;
+    /* Subtle border */
+}
+
+.dark-mode .text_input::placeholder,
+.dark-mode .url_input::placeholder,
+.dark-mode .resource_name_input::placeholder {
+    color: #888;
+    /* Dimmed text */
+}
+
+.dark-mode .text_input:focus,
+.dark-mode .url_input:focus,
+.dark-mode .resource_name_input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 2px #4caf50;
+    background-color: #333;
+}
+
+.dark-mode .save_resource_button {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 2px solid #444;
+}
+
+.dark-mode .save_resource_button:hover {
+    border-color: #4caf50;
+}
+
+.disabled_input {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+    opacity: 0.6;
+    border: 2px solid #444 !important;
+}
+
+.file_input_label {
+    display: flex;
+    position: relative;
+    height: 200px;
+    width: 97%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+
+    color: #333;
+    background-color: hsl(152, 43%, 98%);
+    border: 1px solid hsl(152, 15%, 90%);
+    min-height: 250px;
+    border-radius: 15px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    gap: 15px;
+}
+
+.file_input {
+    display: none;
+}
+
+.upload_icon {
+    width: 75px;
+    height: 75px;
+}
+
+
+.file_input:focus {
+    border-color: #a5efba;
+    box-shadow: 0 0 2px #a5efba;
+    background-color: #ffffff;
+}
+
+.file_input::placeholder {
+    color: #999;
+}
+
+.file_input:focus {
+    transform: scale(1.01);
+}
+
+.upload_success {
+    height: auto;
+    width: 20%;
+    /* Trigger the pop animation when the element appears */
+    animation: pop 0.4s ease-out forwards;
+}
+
+/* Define the pop animation’s keyframes */
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.confirmation_text {
+    color: hsl(240, 4%, 46%);
+    text-align: center;
+    font-size: 20px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.confirmation_sub_text{
+    color: hsl(240, 4%, 46%);
+    text-align: center;
+    font-size: 16px;
+    font-size: medium;
+    font-weight: 400;
+ 
+}
+.audio_img {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.mic_container {
+    position: relative;
+    display: flex;
+    background-color: #a5efba;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.mic_container:hover {
+    transform: scale(1.1);
+}
+
+
+.back_button {
+    position: relative;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: .75rem;
+    border: none;
+    background-color: transparent;
+}
+
+.back_button:hover {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.loading_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading_gif {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 60%;
+}
+
+.description {
+    /* make it behave like a normal textarea */
+    box-sizing: border-box;    /* include padding in the height/width */
+    
+    /* sizing & typography */
+    height: 150px !important;
+    padding: 0.5rem 0.75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    
+    /* ensure the text starts at the very top‑left */
+    text-align: left !important;    /* horizontal */
+    vertical-align: top !important;  /* only affects inline/table-cell, but harmless here */
+    overflow-y: auto !important;   /* scroll if it runs past 150px */
+    overflow-x: hidden !important;
+  resize: none !important;   /* disable any user‑driven resize/drag */
+  overflow: auto;            /* keep scrolling if content overflows */    
+  }
+  
+  .description::placeholder {
+    /* just style your placeholder normally */
+    text-align: left !important;      /* left‑flush */
+    color: #aaa;              /* soft gray */
+    line-height: 1.25rem;     /* match your textarea’s line‑height */
+    /* no need for vertical‑align or justify‑content here */
+  }
+  

@@ -1,0 +1,139 @@
+@media (max-width: 480px) {
+    .header_button {
+        font-size: 0.9rem !important;
+    }
+    .navbar_img{
+        display: none;
+    }
+}
+
+
+/* Default Light Mode */
+.quiz_config_navbar_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vh;
+    width: 95vw;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: hsl(152, 23%, 98%);
+    gap: 10px;
+}
+
+/* Dark Mode */
+.dark-mode .quiz_config_navbar_container {
+    background-color: #292929;
+    /* Dark background */
+
+    /* Adjusted for better contrast */
+}
+
+/* Default Light Mode */
+.button_container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    gap: 10px;
+    flex-direction: row;
+}
+
+/* Default Light Mode */
+.header_button {
+    background-color: transparent;
+    /* White background */
+    position: relative;
+    font-family: sans-serif;
+    height: 100%;
+    width: 150%;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    /* Black text */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    /* Remove underlines */
+    outline: none;
+    /* Remove focus outline */
+    box-shadow: none;
+    border-radius: 5px;
+    /* Remove potential shadows */
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #6c6d76;
+    gap: 5px;
+
+}
+
+/* Dark Mode */
+.dark-mode .header_button {
+    background-color: #292929;
+
+    /* Dark gray */
+    color: #ffffff;
+    /* White text */
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle white border */
+}
+
+/* Border between buttons */
+
+/* Active Button */
+.header_button.active {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(240, 10%, 4%);
+    /* Light green */
+}
+
+/* Dark Mode Active Button */
+.dark-mode .header_button.active {
+    background-color: #2c855bc0;
+    /* Adjusted to be more visible */
+}
+
+/* Hover Effect */
+.header_button:hover {
+    background-color: #f6f6f6;
+    /* Light green */
+}
+
+/* Dark Mode Hover */
+.dark-mode .header_button:hover {
+    background-color: #5cce99d2;
+    /* Slightly lighter green for hover */
+}
+
+.lock{
+    position: absolute;
+    height: 80%;
+    width: auto;
+    left: 95%;
+    z-index: 10;
+}
+
+.locked{
+    background-color: #adadadd2;
+    cursor: default;
+}
+
+.locked:hover{
+    background-color: #adadadd2;
+}
+
+.navbar_img{
+    height: auto;
+    width: 10%;
+}

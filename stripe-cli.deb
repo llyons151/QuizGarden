@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>stripe-cli-archives</BucketName><RequestId>GG3XPZ5W1YX2GWP4</RequestId><HostId>pW6au1etuTaMgBHPYy5/y0KulZ/FVM1tLkR4VQ5TOuAFmHxwZId1HDFG0mr2YJNm1N1hYtk8yss=</HostId></Error>

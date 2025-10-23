@@ -1,0 +1,26 @@
+.lock_screen_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    max-width: 1000px;
+    height: 90vh;
+    max-height: 700px;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    border-radius: 10px;
+  }
+
+  .dark_overlay{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 1); 
+    backdrop-filter: blur(10px);    
+    z-index: 30;               
+  }
+  

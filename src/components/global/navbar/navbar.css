@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'CambonUI Sans Serif';
+    src: url('/fonts/CambonUI-SansSerif.woff2') format('woff2'),
+         url('/fonts/CambonUI-SansSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Global rule to apply the font everywhere */
+  body {
+    font-family: Poppins, sans-serif;
+  }
+
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    position: relative;
+    z-index: 25;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }    
+.navbar_left {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.darkmode_toggle {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.darkmode_toggle:hover {
+    transform: scale(1.1);
+
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.logo_icon{
+    position: relative;
+    height: auto;
+    width: 25%;
+}
+
+.title_header{
+    position: relative;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .title_header{
+        width: 40vw !important;
+        margin-left: 5px;
+        font-size: 1.6rem !important;
+        gap: 5px !important;
+    }
+    .navbar_right{
+        gap: 5px !important;
+    }
+    .logo_icon{
+        display: none;
+    }
+}
+
+.green{
+color: rgb(82 183 136 );
+}
+
+.black{
+    color: rgb(64 62 67);
+}

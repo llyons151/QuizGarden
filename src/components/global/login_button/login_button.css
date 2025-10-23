@@ -1,0 +1,56 @@
+/* Light Mode */
+.login_button {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid rgba(42, 42, 42, 0.2);
+    /* Subtle dark gray border */
+    color: #2a2a2a;
+    /* Dark gray text */
+    cursor: pointer;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    width: 80px;
+    /* Matches signup button */
+    height: 20px;
+    /* Matches signup button */
+    box-sizing: content-box;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    .login_button{
+        width: 10vw !important;
+    }
+}
+
+.login_button:hover {
+    background-color: #c7fad7;
+    /* Greenish hover */
+    color: #000000;
+
+}
+
+/* Dark Mode */
+.dark-mode .login_button {
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle white border */
+    color: #d4d4d4;
+    /* Light gray text */
+}
+
+.dark-mode .login_button:hover {
+    background-color: #5cce99d2;
+    /* Greenish hover */
+    color: #ffffff;
+
+}

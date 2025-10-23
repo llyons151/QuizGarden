@@ -1,0 +1,25 @@
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --exam-green-light: #A8E6CF;
+    --exam-green: #52B788;
+    --exam-green-dark: #2D6A4F;
+  
+    --exam-yellow: #FFE156;
+  
+    --exam-charcoal: #403E43;
+    --exam-charcoal-light: #8A898C;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
