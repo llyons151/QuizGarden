@@ -14,6 +14,7 @@ export async function GenerateQuiz() {
         const data = await response.json();
         const messageEvent = new CustomEvent('quiz-generated', { detail: { message: data } });
         window.dispatchEvent(messageEvent);
+        return data;
     } catch (error) {
         console.error("Error sending message:", error);
     }

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "@/components/home/notes_navbar/notes_navbar.css";
 import { GenerateQuiz } from "@/components/quiz/generate_quiz.js";
-import { flushSync } from "react-dom";
 
 function NotesNavbar({
     setShowQuizConfig,
@@ -14,19 +13,15 @@ function NotesNavbar({
 }) {
     const [isGenerating, setIsGenerating] = useState(false);
 
-
     const handleGenerate = async () => {
+        if (isGenerating) return; 
         try {
-            flushSync(() => setIsGenerating(true));     
-            await new Promise(requestAnimationFrame);  
             setLockQuiz?.(false);
-            await GenerateQuiz();
             setIsQuizActive?.(true);
+            const result = await GenerateQuiz(resourcesList);
         } catch (err) {
             console.error("GenerateQuiz failed:", err);
-        } finally {
-            setIsGenerating(false);
-        }
+        } 
     };
 
     return (
@@ -52,8 +47,11 @@ function NotesNavbar({
             if (setShowQuizConfig) setShowQuizConfig((prev) => !prev);
         }}
         />
-        <div className="generate_quiz_button" onClick={handleGenerate}>
-        Generate Quiz
+        <div
+        className={`generate_quiz_button ${isGenerating ? "is-loading" : ""}`}
+        onClick={handleGenerate}  
+        >
+        {isGenerating ? "Generating..." : "Generate Quiz"}
         </div>
         </div>
         </div>
