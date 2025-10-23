@@ -1,40 +1,56 @@
-<<<<<<< HEAD
-<img width="1911" height="984" alt="image" src="https://github.com/user-attachments/assets/8b925514-9d9e-4d69-bb77-709b896a11b3" />
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/eb8916c1-f922-44cc-8b7c-9a68e16c742b" />
+# 🌱 Quiz Garden
 
-## Getting Started
+**Quiz Garden** is an AI-powered quiz generator that turns your notes, links, or uploaded files into fully interactive quizzes.  
+Whether you’re studying for an exam or practicing recall from your notes, Quiz Garden lets you grow your knowledge — one question at a time.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌸 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🧠 Intelligent Quiz Generation
+- Generate questions instantly from **text**, **PDFs**, **images**, or **links**.
+- AI analyzes the uploaded resources and produces accurate multiple-choice questions with hints and explanations.
+- Configurable difficulty, question count, and hint level.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/5747bc73-2fe6-44f4-8904-7cb5fe4fb80e" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ⚙️ Customizable Settings
+- Choose:
+  - **Question Difficulty:** Easy / Medium / Hard  
+  - **Answer Difficulty:** Easy / Medium / Hard  
+  - **Question Type:** Multiple Choice / True-False / Short Answer  
+  - **Answer Count:** 2-6 choices  
+  - **Hint Style:** None / Few / Many  
+  - **Auto-Submit:** On / Off  
+  - **Timed Mode:** Optional quiz timer.
 
-## Learn More
+<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/9a5b3747-d5ad-41d8-81a6-8ae5e82e363c" />
 
-To learn more about Next.js, take a look at the following resources:
+### 🧾 Resource Upload
+- Upload multiple files or paste text directly.
+- Each upload appears as a resource card in the UI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎮 Interactive Quiz Experience
+- Clean React-based interface.
+- Shows real-time question progress.
+- Provides hints and detailed explanations after each answer.
+- Responsive design — works on desktop and mobile.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔒 Account & Payment Integration
+- Supports premium features like longer quizzes or advanced AI models.
+- Built with Supabase authentication and payment integration (Google OAuth).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧩 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> b0eabcd6 (anyone can gen)
+| Category | Technology |
+|-----------|-------------|
+| Frontend | **React (Next.js)** |
+| Styling | **CSS Modules / Tailwind** |
+| Backend | **Supabase (Postgres + Edge Functions)** |
+| API Integration | Custom Supabase Functions & REST endpoints |
+| Authentication | Supabase Auth + Google OAuth |
+| Deployment | Vercel / Netlify compatible |
+| Language | JavaScript (ESNext) / JSX |
