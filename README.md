@@ -14,7 +14,7 @@ Whether you’re studying for an exam or practicing recall from your notes, Quiz
 - AI analyzes the uploaded resources and produces accurate multiple-choice questions with hints and explanations.
 - Configurable difficulty, question count, and hint level.
 
-<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/5747bc73-2fe6-44f4-8904-7cb5fe4fb80e" />
+<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/9a5b3747-d5ad-41d8-81a6-8ae5e82e363c" />
 
 ### ⚙️ Customizable Settings
 - Choose:
@@ -26,7 +26,7 @@ Whether you’re studying for an exam or practicing recall from your notes, Quiz
   - **Auto-Submit:** On / Off  
   - **Timed Mode:** Optional quiz timer.
 
-<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/9a5b3747-d5ad-41d8-81a6-8ae5e82e363c" />
+<img width="1914" height="989" alt="image" src="https://github.com/user-attachments/assets/5747bc73-2fe6-44f4-8904-7cb5fe4fb80e" />
 
 ### 🧾 Resource Upload
 - Upload multiple files or paste text directly.
