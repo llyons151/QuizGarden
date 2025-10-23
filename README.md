@@ -38,8 +38,7 @@ Whether you’re studying for an exam or practicing recall from your notes, Quiz
 - Provides hints and detailed explanations after each answer.
 - Responsive design — works on desktop and mobile.
 
-### 🔒 Account & Payment Integration
-- Supports premium features like longer quizzes or advanced AI models.
+### 🔒 Account Integration
 - Built with Supabase authentication and payment integration (Google OAuth).
 
 ---
