@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "@/components/home/notes_navbar/notes_navbar.css";
 import { GenerateQuiz } from "@/components/quiz/generate_quiz.js";
+import { flushSync } from "react-dom";
 
 function NotesNavbar({
     setShowQuizConfig,
@@ -13,10 +14,11 @@ function NotesNavbar({
 }) {
     const [isGenerating, setIsGenerating] = useState(false);
 
+
     const handleGenerate = async () => {
-        if (!resourcesList || resourcesList.length === 0 || isGenerating) return;
         try {
-            setIsGenerating(true);
+            flushSync(() => setIsGenerating(true));     
+            await new Promise(requestAnimationFrame);  
             setLockQuiz?.(false);
             await GenerateQuiz();
             setIsQuizActive?.(true);
